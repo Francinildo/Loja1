@@ -10,15 +10,24 @@
     {
         "owner": {
             "properties": {
-                "element": {"#": "main"}
+                "element": {"#": "main"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
             }
         },
-        "button": {
+        "button2": {
             "prototype": "montage/ui/button.reel",
             "properties": {
-                "element": {"#": "button"},
+                "element": {"#": "button2"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
                 "enabled": true,
-                "label": "Button"
+                "formenctype": "application/x-www-form-urlencoded",
+                "formmethod": "get",
+                "label": "Button",
+                "type": "button"
             }
         }
     }
@@ -27,6 +36,7 @@
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <button data-montage-id="button"></button>
+        <button data-montage-id="button2"></button>
     </div>
 </body>
 </html>
