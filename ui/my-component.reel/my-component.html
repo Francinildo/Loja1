@@ -7,7 +7,13 @@
     {
         "owner": {
             "properties": {
-                "element": {"#": "owner"}
+                "element": {"#": "owner"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
+            },
+            "bindings": {
+                "Gap": {"<->": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEvDsSWozgqd0RF48blChVEdg8Yj1C8ipNxJ6Y82lyPAT09dmWH_pm-q4"}
             }
         }
     }
@@ -15,6 +21,10 @@
 </head>
 <body>
     <div data-montage-id="owner" class="MyComponent">
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0" data-montage-id="flow">
+            <div></div>
+        </div>
+        <button data-montage-id="button"></button>
     </div>
 </body>
 </html>
